@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block heading %}MySimilarFace- Try{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block Body %}
+<form method="POST" enctype = "multipart/form-data">
+        <input type = "file" name = "file" multiple />
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
