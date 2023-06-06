@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {%- block head -%}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='icon.png') }}" type="image/icon type">
+    <title>{% block heading %}{% endblock %}</title>
+  {%- endblock -%}
+</head>
+<body background="{{ url_for('static', filename='home-background.jpg') }}" >
+<div class = "centering"> {%- block Body -%}{%- endblock -%} </div>
+</body>
+</html>

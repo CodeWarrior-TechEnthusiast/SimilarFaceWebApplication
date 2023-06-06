@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block heading %}MySimilarFace{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block Body %}
+<h1>Welcome to the Real time Person Identifier</h1>
+<div>
+    <img src = "{{ url_for('video') }}" width="25%"/>
+</div>
+{% endblock %}
